@@ -1,0 +1,139 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    background-color: #E1D4C9;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1360px;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 184px;
+    height: 44px;
+    gap: 24px;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    width: 88px;
+    height: 44px;
+    background-color: #E1D4C9;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+    padding: 4px;
+    gap: 8px;
+}
+
+.sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    padding: 1px;
+    gap: 10px;
+    background-color: #B0907A;
+}
+
+.sun-image {
+    width: 22px;
+    height: 22px;
+}
+
+.moon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+}
+
+.moon-image {
+    width: 18px;
+    height: 18px;
+}
+
+.button-catalog {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    max-width: 1440px;
+    height: 644px;
+    background-image: url("../images/img-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    padding: 100px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    width: 530px;
+    color: #E1D4C9;
+    gap: 40px;
+    
+}
+
+h1 {
+    height: 228px;
+    font-size: 72px;
+    font-style: bold;
+    line-height: 105%;
+}
+
+.accent {
+    font-style: italic;
+    color: #B0907A;
+}
+
+.button-hero {
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    padding: 20px 78px;
+    gap: 8 px;
+    background-color: #E1D4C9;
+    color: #403F3D;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+}
