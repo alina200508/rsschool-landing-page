@@ -17,10 +17,10 @@
 
             <nav>
                 <ul class="navigation">
-                    <li>Favorite coffee</li>
-                    <li>About</li>
-                    <li>Mobile app</li>
-                    <li>Contact us</li>
+                    <li><a href="#favorite_coffee">Favorite coffee</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mobile_app">Mobile app</a></li>
+                    <li><a href="#contacts">Contact us</a></li>
                 </ul>
             </nav>
 
@@ -49,23 +49,105 @@
     </header>
 
     <main>
-        <section class="favorite_coffee">
-            <div class="container_slider">
+        
+        <section class="slider" aria-roledescription="карусель" aria-label="Наши напитки">
+            <h2 class="slider__title">Choose your favorite coffee</h2>
+
+            <div class="slider_with_buttons">
+            
+            <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий напиток">
+            <svg class="slider__btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+
+            <div class="slider__viewport">
+                <ul class="slider__track">
+                <li class="slider__slide">
+                    <article class="drink-card">
+                    <img class="drink-card__image" src="images/coffee-slider-1.png" alt="Frappuccino">
+                    <h3 class="drink-card__title">Smores Frappuccino</h3>
+                    <p class="drink-card__desc">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                    <p class="drink-card__price">$5.50</p>
+                    </article>
+                </li>
+
+                <li class="slider__slide">
+                    <article class="drink-card">
+                    <img class="drink-card__image" src="images/coffee-slider-2.png" alt="Caramel Macchiato">
+                    <h3 class="drink-card__title">Caramel Macchiato</h3>
+                    <p class="drink-card__desc">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                    <p class="drink-card__price">$5.00</p>
+                    </article>
+                </li>
+
+                <li class="slider__slide">
+                    <article class="drink-card">
+                    <img class="drink-card__image" src="images/coffee-slider-3.png" alt="Ice coffee">
+                    <h3 class="drink-card__title">Ice coffee</h3>
+                    <p class="drink-card__desc">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                    <p class="drink-card__price">$4.50</p>
+                    </article>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Правая: стрелка с хвостом -->
+            <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий напиток">
+            <svg class="slider__btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
 
             </div>
 
+            <!-- Полосочки-индикаторы -->
+            <div class="slider__pagination" role="tablist" aria-label="Выбор напитка">
+                <button class="slider__bar is-active" type="button" role="tab" aria-label="Напиток 1" aria-selected="true"></button>
+                <button class="slider__bar" type="button" role="tab" aria-label="Напиток 2" aria-selected="false"></button>
+                <button class="slider__bar" type="button" role="tab" aria-label="Напиток 3" aria-selected="false"></button>
+            </div>
         </section>
 
-        <section class="about">
-
+        <section class="about" id="about">
+            <div class="about_container">
+                <h2>Resource is <span class="accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+                <div class="about_images">
+                    <div class="column">
+                        <img class="about_1" src="images/about-1.png" alt="about 1">
+                        <img class="about_2" src="images/about-2.png" alt="about 2">
+                    </div>
+                    <div class="column">
+                        <img class="about_3" src="images/about-3.png" alt="about 3">
+                        <img class="about_4" src="images/about-4.png" alt="about 4">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="mobile_app">
+        <section class="mobile_app" id="mobile_app">
             <div class="container_mobile_app">
                 <div class="offer_mobile">
                     <h2 class="offer_main_text"><span class="accent">Download</span> our app to start ordering</h2>
                     <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-                    <div></div>
+                    <div class="buttons_apps">
+                        <button class="button_app_store">
+                            <img src="images/Icon_app_store.svg" alt="app store icon">
+                            <div>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </button>
+                        <button class="button_google_play">
+                            <img src="images/Icon_google_play.svg" alt="google play icon">
+                            <div>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
                 <img src="images/mobile-screens.svg" alt="mobile_screens">
             </div>
@@ -73,21 +155,25 @@
         </section>
     </main>
 
-    <footer class="contacts">
+    <footer class="contacts" id="contacts">
         <div class="contacts_container">
             <div class="footer_offer">
                 <h2>Sip, Savor, Smile.
 
-                <span class="accent">Its coffee time!</span>
+                <span class="accent">I'ts coffee time!</span>
                 </h2>
-                <div></div>
+                <div class="socials">
+                    <button class="twitter"><img src="images/twitter.svg" alt="Twitter"></button>
+                    <button class="instagram"><img src="images/instagram.svg" alt="Instagram"></button>
+                    <button class="facebook"><img src="images/facebook.svg" alt="Facebook"></button>
+                </div>
             </div>
             <div class="contacts_info">
-                <p>Contact us</p>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <p class="contact_us">Contact us</p>
+                <div class="contacts_data">
+                    <div class="data"><img class="icon_data" src="images/pin-alt.svg" alt="pin-alt"><p class="data_text">8558 Green Rd.,  LA</p></div>
+                    <div class="data"><img class="icon_data" src="images/phone.svg" alt="phone"><p class="data_text">+1 (603) 555-0123</p></div>
+                    <div class="data"><img class="icon_data" src="images/clock.svg" alt="clock"><p class="data_text">Mon–Sat: 9:00–23:00</p></div>
                 </div>
             </div>
         </div>
